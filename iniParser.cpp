@@ -3,9 +3,9 @@
 #include <string.h>
 
 // module variables
-	int					iFoundTopic;
-	int					iFoundItem;
-	int					iError;
+	int				iFoundTopic;
+	int				iFoundItem;
+	int				iError;
 	long				lTopicFilePos;
 	char				szTopicHeading[80];
 	char				szLastTopicHeading[80];
@@ -19,13 +19,13 @@
 // PPSetPrivateProfileString
 // save configuration string
 int PPSetPrivateProfileString ( char *pszPath, 
-								char *pszTopic, 
-								char *pszItem, 
-								char *pszValue
-								) 
+				char *pszTopic, 
+				char *pszItem, 
+				char *pszValue
+				) 
 {
-	int		iItemLength;
-	int		iValueLength;
+	int iItemLength;
+	int iValueLength;
 
 	iError = 0;
 	szLastTopicHeading[0] = '\0';
@@ -149,14 +149,14 @@ int PPSetPrivateProfileString ( char *pszPath,
 // PPGetPrivateProfileInt
 // read configuration string
 int PPGetPrivateProfileInt ( char *pszPath, 
-							char *pszTopic, 
-							char *pszItem, 
-							char *pszValue	
-							)
+				char *pszTopic, 
+				char *pszItem, 
+				char *pszValue	
+				)
 {
-	int		iItemLength;
-	int		iValueLength;
-	char	*pcLastCharacter;
+	int iItemLength;
+	int iValueLength;
+	char *pcLastCharacter;
 
 	iError = 0;
 
